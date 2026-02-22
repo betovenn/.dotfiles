@@ -75,6 +75,10 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+# 
+# This were installed using pacman in arch, use pacman -Ql zsh-autosuggestions
+# pacman -Ql zsh-syntax-highlighting to see where are these stored.
+# other wise check how you can install these if you are not on archlinux
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

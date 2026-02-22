@@ -1,4 +1,4 @@
-export ZDOTDIR="$HOME/.config/zsh
+export ZDOTDIR="$HOME/.config/zsh"
 
 
 export PATH="$HOME/fvm/versions/3.38.5/bin:$PATH"
