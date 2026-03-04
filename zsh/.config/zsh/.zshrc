@@ -112,3 +112,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Created by `pipx` on 2026-02-22 02:27:26
 export PATH="$PATH:$HOME/.local/bin"
+
+autoload -U compinit promptinit
+compinit 
+promptinit; prompt gentoo
+
+zstyle ':completion::complete:*' use-cache 1
