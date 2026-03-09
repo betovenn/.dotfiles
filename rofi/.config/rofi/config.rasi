@@ -8,7 +8,6 @@ configuration {
     font: "JetBrainsMono Nerd Font 12";
 }
 
-/* This line kills the ugly default light theme completely */
 @theme "/dev/null"
 
 * {

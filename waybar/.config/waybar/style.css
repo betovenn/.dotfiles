@@ -1,14 +1,11 @@
 * {
-    /* JetBrainsMono fits the retro Gruvbox vibe perfectly */
-    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-family: "JetBrainsMonoNerdFont", monospace;
     font-size: 12px;
     border-radius: 10px;
 }
 
 window#waybar {
-    /* Gruvbox dark0 background */
     background-color: rgba(40, 40, 40, 0.95); 
-    /* Gruvbox light1 foreground */
     color: #ebdbb2; 
     transition-property: background-color;
     transition-duration: .5s;
@@ -27,7 +24,6 @@ window#waybar {
 }
 
 #workspaces button.active {
-    /* Gruvbox bright yellow for the active workspace */
     color: #fabd2f; 
     font-weight: bold;
 }
@@ -40,18 +36,15 @@ window#waybar {
 #window {
     padding: 0 12px;
     margin: 4px 4px;
-    /* Very subtle light background for the modules */
     background-color: rgba(251, 241, 199, 0.05); 
 }
 
 #window {
     border-radius: 6px;
-    /* Gruvbox bright green for the active window title */
     color: #b8bb26; 
 }
 
 #pulseaudio.muted {
-    /* Gruvbox bright red for muted audio to grab your attention */
     background-color: #cc241d; 
     color: #ebdbb2;
 }
