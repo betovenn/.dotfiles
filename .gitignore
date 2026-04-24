@@ -1,3 +1,4 @@
 .zcompdump*
 nvim/.config/nvim/lazy-lock.json
 .zprofile*
+.zsh_hystory*
