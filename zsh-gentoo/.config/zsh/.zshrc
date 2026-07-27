@@ -78,6 +78,17 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export PATH="$HOME/.local/bin:$PATH"
+
+# Guix setup
+export GUIX_PROFILE="$HOME/.guix-profile"
+if [ -f "$GUIX_PROFILE/etc/profile" ]; then
+    source "$GUIX_PROFILE/etc/profile"
+fi
+export GUIX_LOCPATH="$HOME/.guix-profile/lib/locale"
+
+export PATH="$HOME/devlibs/flutter/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -107,13 +118,3 @@ source $ZSH/oh-my-zsh.sh
 
 # Correction
 setopt correctall
-
-
-# Guix setupexport GUIX_PROFILE="$HOME/.guix-profile"
-if [ -f "$GUIX_PROFILE/etc/profile" ]; then
-    source "$GUIX_PROFILE/etc/profile"
-fi
-export GUIX_LOCPATH="$HOME/.guix-profile/lib/locale"
-export PATH="$HOME/.local/bin:$PATH"
-
-export PATH="$HOME/devlibs/flutter/bin:$PATH"
