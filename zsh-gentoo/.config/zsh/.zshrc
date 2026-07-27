@@ -107,3 +107,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Correction
 setopt correctall
+
+
+# Guix setupexport GUIX_PROFILE="$HOME/.guix-profile"
+if [ -f "$GUIX_PROFILE/etc/profile" ]; then
+    source "$GUIX_PROFILE/etc/profile"
+fi
+export GUIX_LOCPATH="$HOME/.guix-profile/lib/locale"
+export PATH="$HOME/.local/bin:$PATH"
+
+export PATH="$HOME/devlibs/flutter/bin:$PATH"
