@@ -3,3 +3,4 @@ nvim/.config/nvim/lazy-lock.json
 .zprofile*
 .zsh_hystory*
 .zprofile
+zsh-gentoo/.config/zsh/.zsh_history
