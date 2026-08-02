@@ -1,50 +1,109 @@
-* {
-    font-family: "JetBrainsMonoNerdFont", monospace;
-    font-size: 12px;
-    border-radius: 10px;
+* { 
+    padding: 0;
+    margin: 0;
+    
 }
 
-window#waybar {
-    background-color: rgba(40, 40, 40, 0.95); 
-    color: #ebdbb2; 
-    transition-property: background-color;
-    transition-duration: .5s;
+#waybar { 
+  background-color: transparent; 
+  color: #d3c6aa;
+}
+
+.modules-left {
+background-color: #2f383e;
+margin-left: 8px;
+margin-bottom: 8px;
+padding: 0px 12px 0px 12px
+}
+
+.modules-center {
+background-color: transparent;
+margin-left: 0px;
+margin-bottom: 8px;
+}
+
+.modules-right {
+background-color: transparent;
+margin-bottom: 6px;
+padding: 0px 0px 0px 6px;
+margin-right: 8px;
+}
+
+#workspaces  {
+background-color: transparent;
+
 }
 
 #workspaces button {
-    padding: 0 8px;
-    background-color: transparent;
-    /* Gruvbox gray */
-    color: #a89984; 
+border-radius: 30px;
+background: #83c092;
+margin-left: 4px;
+margin-right: 4px;
+color: #2f383e;
+
 }
 
-#workspaces button:hover {
-    background: rgba(251, 241, 199, 0.1); 
-    color: #ebdbb2;
+#workspaces button.focused {
+background: #a7c080;
+
 }
 
-#workspaces button.active {
-    color: #fabd2f; 
-    font-weight: bold;
+#mpd {
+padding-left: 4px;
+padding-right: 4px;
+background-color: #2f383e;
 }
 
-#clock,
-#cpu,
-#memory,
-#pulseaudio,
-#tray,
-#window {
-    padding: 0 12px;
-    margin: 4px 4px;
-    background-color: rgba(251, 241, 199, 0.05); 
+#idle_inhibitor {
+padding-left: 4px;
+padding-right: 4px;
+background-color: #2f383e;
 }
 
-#window {
-    border-radius: 6px;
-    color: #b8bb26; 
+#pulseaudio { 
+padding-left: 4px;
+padding-right: 4px;
+background-color: #2f383e;
 }
 
-#pulseaudio.muted {
-    background-color: #cc241d; 
-    color: #ebdbb2;
+#power-profiles-daemon {
+padding-left: 4px;
+padding-right: 4px;
+background-color: #2f383e;
+}
+
+#backlight {
+padding-left: 4px;
+padding-right: 4px;
+background-color: #2f383e;
+}
+
+#battery {
+padding-left: 4px;
+padding-right: 4px;
+background-color: #2f383e;
+}
+
+#clock {
+padding-left: 4px;
+padding-right: 4px;
+background-color: #2f383e;
+}
+
+#custom-bluetooth {
+padding-left: 4px;
+padding-right: 4px;
+background-color: #2f383e;
+}
+
+#tray {
+padding-left: 4px;
+padding-right: 4px;
+background-color: #2f383e;
+}
+
+#custom-power {
+padding-left: 4px;
+padding-right: 4px;
+background-color: #2f383e;
 }

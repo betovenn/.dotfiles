@@ -21,6 +21,7 @@ set $menu wmenu-run
 ### Output configuration
 exec gentoo-pipewire-launcher
 exec gammastep -P -O 4000k
+exec mako
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /home/albertiwi/wallpapers/wp9709475-autumn-pixel-art-wallpapers.png fill
@@ -73,7 +74,7 @@ output * bg /home/albertiwi/wallpapers/wp9709475-autumn-pixel-art-wallpapers.png
     bindsym $mod+Return exec $term
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
@@ -231,6 +232,7 @@ bar {
     # The default just shows the current date and time.
     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
 
+
     colors {
         statusline #ffffff
         background #323232
@@ -238,4 +240,17 @@ bar {
     }
 }
 
-include /etc/sway/config.d/*
+#    bar {
+#            # Execute Waybar; Waybar restarts when Sway reloads.
+#            swaybar_command waybar
+#            # Hide Sway's builtin status bar.
+#            #mode invisible
+#    }
+
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
+    gsettings set $gnome-schema color-scheme 'prefer-dark'
+}
+
+include config.d/*
