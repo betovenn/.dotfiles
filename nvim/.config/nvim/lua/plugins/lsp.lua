@@ -23,6 +23,7 @@ return {
           },
         },
         pyright = {},       -- Python
+        jdtls = {},         -- Java
       }
 
       -- Ensure they are installed via Mason
