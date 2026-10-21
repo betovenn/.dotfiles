@@ -118,3 +118,12 @@ export PATH="$HOME/devlibs/flutter/bin:$PATH"
 
 # Correction
 setopt correctall
+
+# pnpm
+export PNPM_HOME="$HOME/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
